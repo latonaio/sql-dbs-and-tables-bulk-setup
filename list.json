@@ -1,0 +1,169 @@
+[
+  {
+		"podName": "data-platform-masters-and-transactions-mysql-kube",
+		"podRepositoryUrl": "https://github.com/latonaio/data-platform-masters-and-transactions-mysql-kube.git",
+		"branch": "master",
+		"port": "30010",
+		"databases": [
+			{
+				"databaseName": "DataPlatformMastersAndTransactionsMysqlKube",
+				"tables": [
+					{
+						"sqlListName": "data-platform-plant-sql",
+						"sqlListRepositoryUrl": "https://github.com/latonaio/data-platform-plant-sql.git",
+						"branch": "master",
+						"sqlFiles": [
+							{
+								"sqlFileName": "data_platform_plant_sql_address_data.sql",
+								"tableName": "data_platform_plant_address_data",
+								"indexNumber": 2
+							},
+							{
+								"sqlFileName": "data_platform_plant_sql_general_data.sql",
+								"tableName": "data_platform_plant_general_data",
+								"indexNumber": 1
+							}
+						]
+					}
+				]
+			},
+			{
+				"databaseName": "DataPlatformMastersAndTransactionsMysqlKube",
+				"tables": [
+					{
+						"sqlListName": "data-platform-business-partner-sql",
+						"sqlListRepositoryUrl": "https://github.com/latonaio/data-platform-business-partner-sql.git",
+						"branch": "master",
+						"sqlFiles": [
+							{
+								"sqlFileName": "data-platform-business-partner-customer-accounting-data.sql",
+								"tableName": "data_platform_business_partner_customer_accounting_dat",
+								"indexNumber": 2
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-address-data.sql",
+								"tableName": "data_platform_business_partner_address_data",
+								"indexNumber": 3
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-bank-data.sql",
+								"tableName": "data_platform_business_partner_bank_data",
+								"indexNumber": 4
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-customer-data.sql",
+								"tableName": "data_platform_business_partner_customer_data",
+								"indexNumber": 5
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-customer-partner-function-data.sql",
+								"tableName": "data_platform_business_partner_customer_partner_function_data",
+								"indexNumber": 6
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-customer-partner-plant-data.sql",
+								"tableName": "data_platform_business_partner_customer_partner_plant_data",
+								"indexNumber": 7
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-customer-sales-area-data.sql",
+								"tableName": "data_platform_business_partner_customer_sales_area_data",
+								"indexNumber": 8
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-general-data.sql",
+								"tableName": "data_platform_business_partner_general_data",
+								"indexNumber": 1
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-relationship-data.sql",
+								"tableName": "data_platform_business_partner_relationship_data",
+								"indexNumber": 9
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-role-data.sql",
+								"tableName": "data_platform_business_partner_role_data",
+								"indexNumber": 10
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-supplier-accounting-data.sql",
+								"tableName": "data_platform_business_partner_supplier_accounting_data",
+								"indexNumber": 11
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-supplier-data.sql",
+								"tableName": "data_platform_business_partner_supplier_data",
+								"indexNumber": 12
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-supplier-partner-function-data.sql",
+								"tableName": "data_platform_business_partner_supplier_partner_function_data",
+								"indexNumber": 13
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-supplier-partner-plant-data.sql",
+								"tableName": "data_platform_business_partner_supplier_partner_plant_data",
+								"indexNumber": 14
+							},
+							{
+								"sqlFileName": "data-platform-business-partner-sql-supplier-purchasing-organization-data.sql",
+								"tableName": "data_platform_business_partner_supplier_purchasing_organization_data",
+								"indexNumber": 15
+							}
+						]
+					}
+				]
+			}
+		]
+  },
+	{
+		"podName": "data-platform-common-settings-mysql-kube",
+		"podRepositoryUrl": "https://github.com/latonaio/data-platform-common-settings-mysql-kube.git",
+		"branch": "master",
+		"port": "30011",
+		"databases": [
+			{
+				"databaseName": "DataPlatformCommonSettingsMysqlKube",
+				"tables": [
+					{
+						"sqlListName": "data-platform-api-request-to-rabbitmq-queue-mapper-sql",
+						"sqlListRepositoryUrl": "https://github.com/latonaio/data-platform-api-request-to-rabbitmq-queue-mapper-sql.git",
+						"branch": "master",
+						"sqlFiles": [
+							{
+								"sqlFileName": "data-platform-api-request-to-rmq-mapper-sql.sql",
+								"tableName": "data_platform_api_request_to_rmq_mapper",
+								"indexNumber": 1
+							}
+						]
+					}
+				]
+			}
+		]
+  },
+	{
+		"podName": "data-platform-authenticator-mysql-kube",
+		"podRepositoryUrl": "https://github.com/latonaio/data-platform-authenticator-mysql-kube.git",
+		"branch": "master",
+		"port": "30012",
+		"databases": [
+			{
+				"databaseName": "DataPlatformAuthenticatorSQL",
+				"tables": [
+					{
+						"sqlListName": "data-platform-authenticator-sql",
+						"sqlListRepositoryUrl": "https://github.com/latonaio/data-platform-authenticator-sql.git",
+						"branch": "master",
+						"sqlFiles": [
+							{
+								"sqlFileName": "data-platform-authenticator-sql-business-user-data.sql",
+								"tableName": "data_platform_authenticator_business_user_data",
+								"indexNumber": 1
+							}
+						]
+					}
+				]
+			}
+		]
+  }
+]
