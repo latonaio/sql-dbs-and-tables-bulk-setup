@@ -16,7 +16,11 @@ pip install -r requirements.txt
 ```
 
 ### 環境変数、jsonファイルの設定
-`.env` を作成し、SQL のユーザー、パスワード、ホストを指定します。
+`my.conf` を作成し、SQL のユーザー、ユーザーパスワード、ホストを設定します。
+
+`my-root.conf` を作成し、SQL のルートユーザー、ルートユーザーパスワード、ホストを設定します。
+
+`.env` を作成し、SQL のユーザーを設定します。
 
 `list.json` にポート番号、データベース名、sqlファイル名、テーブル名等を設定します。
 
@@ -24,7 +28,7 @@ pip install -r requirements.txt
 #### SQL を立ち上げ得るリポジトリとsqlファイルを含むリポジトリを使用する場合
 以下のコマンドで、Kubernetes 上でSQL のPod を立ち上げるリポジトリとSQL のテーブルを作成を行うリポジトリのクローンをします。
 ```
-python setup-sql.py clone
+python setup_sql.py clone
 ```
 
 - Kubernetes 上でSQL のPod を立ち上げるリポジトリの例
@@ -55,13 +59,26 @@ resources
 ```
 
 ### データベースとテーブルの作成
+#### ユーザーにデータベースとテーブルの作成権限がある場合
 以下のコマンドで、指定したデータベースとテーブルを作成します。
 ```
-python setup-sql.py create
+python setup_sql.py create
+```
+
+#### ユーザーにデータベースとテーブルの作成権限がない場合
+以下のコマンドで、指定したユーザーに権限の付与をしてから、指定したデータベースとテーブルを作成します。
+```
+python setup_sql.py create --perms
+```
+
+### 権限の付与
+以下のコマンドで、指定したユーザーに権限を付与します。
+```
+python setup_sql.py grant
 ```
 
 ### データベースとテーブルの削除
 以下のコマンドで、指定したデータベースとテーブルを削除します。
 ```
-python setup-sql.py delete
+python setup_sql.py delete
 ```

@@ -1,0 +1,4 @@
+[client]
+user =  # SQLのルートユーザー名を指定
+password =  # SQLのルートユーザーパスワードを指定
+host =  # SQLのホストを指定

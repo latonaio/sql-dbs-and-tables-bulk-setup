@@ -148,7 +148,7 @@
 		"port": "30012",
 		"databases": [
 			{
-				"databaseName": "DataPlatformAuthenticatorSQL",
+				"databaseName": "DataPlatformAuthenticatorMysqlKube",
 				"tables": [
 					{
 						"sqlListName": "data-platform-authenticator-sql",

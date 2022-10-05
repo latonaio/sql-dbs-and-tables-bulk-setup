@@ -1,0 +1,4 @@
+[client]
+user =  # SQLのユーザー名を指定
+password =  # SQLのユーザーパスワードを指定
+host =  # SQLのホストを指定
